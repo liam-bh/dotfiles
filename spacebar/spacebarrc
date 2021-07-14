@@ -1,0 +1,19 @@
+spacebar -m config height 24
+spacebar -m config clock_icon ⠀
+spacebar -m config dnd on
+spacebar -m config dnd_icon DND
+spacebar -m config display all
+spacebar -m config space_icon_strip HOME SHELL
+spacebar -m config space_icon \~
+spacebar -m padding_right 25
+spacebar -m padding_left 25
+
+# shell shit
+spacebar -m config left_shell on
+spacebar -m config left_shell_icon \>
+spacebar -m config left_shell_icon_color 0xff70f54e
+
+spacebar -m config title off
+spacebar -m config center_shell on
+spacebar -m config center_shell_command "echo PENDING"
+spacebar -m config center_shell_icon ⠀
