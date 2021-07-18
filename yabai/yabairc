@@ -11,7 +11,6 @@ yabai -m config right_padding  20
 yabai -m config window_gap     5
 
 # mouse config
-yabai -m config mouse_modifier fn
 yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 yabai -m config focus_follows_mouse autoraise
