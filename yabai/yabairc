@@ -1,4 +1,8 @@
 
+# script loading
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
 # tiling system init
 yabai -m config window_placement second_child
 yabai -m config layout bsp
@@ -22,8 +26,4 @@ yabai -m config window_shadow off
 # space naming
 yabai -m space 1 --label HOME
 yabai -m space 2 --label SHELL
-
-# script loading
-sudo yabai --load-sa
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
