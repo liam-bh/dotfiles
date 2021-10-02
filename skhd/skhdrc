@@ -1,2 +1,2 @@
-alt + shift - e : yabai -m space --layout float; spacebar -m config left_shell_command "echo $(yabai -m query --spaces --space | jq .index) float"
-alt + shift - w : yabai -m space --layout bsp; spacebar -m config left_shell_command "echo $(yabai -m query --spaces --space | jq .index) bsp"
+alt + shift - e : yabai -m space --layout float
+alt + shift - w : yabai -m space --layout bsp
