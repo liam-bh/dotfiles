@@ -1,8 +1,6 @@
 .DS_Store
 
 # ignoring a lot of fishs stuff because of tide commit pains
-fish/fish_variables
-fish/completions
-fish/conf.d/
-fish/functions/
-fish/testfile
+fish/*
+!fish/config.fish
+!fish/fish_plugins
