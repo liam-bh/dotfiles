@@ -11,7 +11,7 @@ alt - a : yabai -m window --focus west
 
 # application shortcuts
 # \
-cmd - 0x2A : open /Applications/kitty.app/
+cmd - 0x2A : open -a "Kitty" "$HOME"
 
 # space refocus controls
 alt + shift - a : yabai -m space --focus prev

@@ -1,4 +1,5 @@
 .DS_Store
+nvim/pluginStuff
 
 # ignoring a lot of fishs stuff because of tide commit pains
 fish/*
