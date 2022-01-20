@@ -1,0 +1,8 @@
+## Vim
+Scroll cursor down    | <C-d>
+Scroll cursor up      | <C-u>
+Scroll viewport down  | <C-e>
+Scroll viewport up    | <C-y>
+Hide search selection | :noh
+Search                | /
+Show cheatsheet       | \?
