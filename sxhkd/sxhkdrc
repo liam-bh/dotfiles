@@ -1,0 +1,41 @@
+# terminal 
+super + backslash
+	kitty
+
+# close apps
+super + q
+	bspc node -c
+
+# alternate the window control mode
+alt + shift + e
+	if [ -z "$(bspc query -N -n focused.floating)"]; then \
+		bspc node focused -t floating; \
+	else \
+		bspc node focused -t tiled; \
+	fi
+
+alt + shift + f
+    bspc node -t fullscreen
+
+# focus the node in the given direction
+alt + {a,w,s,d}
+	bspc node -f {west,north,south,east}
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# dmenu summon
+super + space
+	dmenu_run
+
+# nice position mostly for terminal
+alt + shift + r
+    bspc node focused -t floating; \
+    export ACTIVEWINDOW=$(xdotool getactivewindow); \
+    xdotool windowmove $ACTIVEWINDOW 800 60; \
+    xdotool windowsize $ACTIVEWINDOW 585 0
